@@ -1,7 +1,7 @@
-title: Grav
+title: Blog
 author:
-  name: Joe Bloggs
-  email: 'joe@test.com'
+  name: Alain Horner
+  email: 'alain.hornair@gmail.com'
 metadata:
-    description: 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+    description: 'My personal blog'
 
