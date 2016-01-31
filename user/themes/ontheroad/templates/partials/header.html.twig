@@ -1,23 +1,37 @@
-<nav class="navbar navbar-default navbar-inverse navbar-static-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Grav</a>
-        </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-                {% for page in pages.children %}
-                    {% if page.visible %}
-                        {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
-                        <li class="{{ current_page }}"><a href="{{ page.url }}">{{ page.menu }}</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-        </div>
-    </div>
-</nav>
+<header id="header">
+    <nav role="navigation">
+        <ul class="nav">
+            {# About #}
+            {% if '/about' in current_page.url %}
+                <li class="nav-item nav-item-active"><a href="/about">About</a></li>
+            {% else %}
+                <li class="nav-item"><a href="/about">About</a></li>
+            {% endif %}
+
+            {# Map #}
+            {% if '/map' in current_page.url %}
+                <li class="nav-item nav-item-active"><a href="/map">Map</a></li>
+            {% else %}
+                <li class="nav-item"><a href="/map">Map</a></li>
+            {% endif %}
+
+            {# Blog #}
+            {% if '/blog' in current_page.url %}
+                <li class="nav-item nav-item-active"><a href="/blog">Blog</a></li>
+            {% else %}
+                <li class="nav-item"><a href="/blog">Blog</a></li>
+            {% endif %}
+
+            {# Home #}
+            <li class="nav-item nav-item-title icon-directions"><a href="{{ base_url }}">{{ site_title }}</a></li>
+
+            {# TODO: be smarter about this. use the following #}
+            {#{% for page in pages.children %}#}
+                {#{% if page.visible %}#}
+                    {#{% set current_page = (page.active or page.activeChild) ? 'active' : '' %}#}
+                    {#<li class="{{ current_page }}"><a href="{{ page.url }}">{{ page.menu }}</a></li>#}
+                {#{% endif %}#}
+            {#{% endfor %}#}
+        </ul>
+    </nav>
+</header>

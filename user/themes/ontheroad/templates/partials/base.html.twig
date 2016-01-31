@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     {% block head %}
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>{% if header.title %}{{ header.title }} | {% endif %}{{ site.title }}</title>
 
         {% if header.description %}
             <meta name="description" content="{{ header.description }}">
@@ -16,14 +18,28 @@
             <meta name="robots" content="{{ header.robots }}">
         {% endif %}
 
-        <link rel="icon" type="image/png" href="{{ theme_url }}/images/favicon.ico">
+        <link rel="shortcut icon" href="{{ theme_url }}/images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="{{ theme_url }}/images/favicon.ico" type="image/x-icon">
 
-        <title>{% if header.title %}{{ header.title }} | {% endif %}{{ site.title }}</title>
+        {# Google Analytics #}
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-50156206-1', 'alainhorner.ch');
+            ga('send', 'pageview');
+        </script>
 
         {% block stylesheets %}
-            {% do assets.add('theme://css/bootstrap.min.css', 101) %}
-            {% do assets.add('theme://css/custom.css', 100) %}
+            {% do assets.add('theme://css/pure-min.css', 101) %}
+            {% do assets.add('theme://css/icons.css', 101) %}
+            {% do assets.add('theme://css/main.css', 100) %}
             {{ assets.css() }}
+        {% endblock %}
+
+        {% block head_scripts %}
         {% endblock %}
     {% endblock head %}
 </head>
@@ -31,20 +47,28 @@
 <body>
     {% include 'partials/header.html.twig' %}
 
-    <div class="container">
+    <section id="content">
         {% block content %}
+            {{ content }}
         {% endblock %}
-    </div>
+    </section>
 
-    <div class="footer">
-        <div class="container">
-            <p class="text-muted">Bootstrap Theme for <a href="http://getgrav.org">Grav</a></p>
+    <footer id="footer">
+        <div class="footer-inner">
+            <ul class="social">
+                <li class="icon-twitter"><div class="social-item">Folge mir auf <a href="https://twitter.com/elHornair">Twitter</a><div></li>
+                <li class="icon-facebook"><div class="social-item">Werde mein Freund auf <a href="https://www.facebook.com/hornair">Facebook</a><div></li>
+            </ul>
         </div>
-    </div>
+    </footer>
+
     {% block javascripts %}
         {% do assets.add('theme://js/jquery-1.12.0.min.js') %}
         {% do assets.add('theme://js/bootstrap.min.js') %}
         {{ assets.js() }}
+    {% endblock %}
+
+    {% block bottom_scripts %}
     {% endblock %}
 </body>
 </html>
