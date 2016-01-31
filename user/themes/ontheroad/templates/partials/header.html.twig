@@ -1,37 +1,17 @@
 <header id="header">
     <nav role="navigation">
         <ul class="nav">
-            {# About #}
-            {% if '/about' in current_page.url %}
-                <li class="nav-item nav-item-active"><a href="/about">About</a></li>
-            {% else %}
-                <li class="nav-item"><a href="/about">About</a></li>
-            {% endif %}
+            {% for page in pages.children %}
+                {% if page.visible %}
+                    {% set additional_classes = (page.active or page.activeChild) ? ' nav-item-active' : '' %}
 
-            {# Map #}
-            {% if '/map' in current_page.url %}
-                <li class="nav-item nav-item-active"><a href="/map">Map</a></li>
-            {% else %}
-                <li class="nav-item"><a href="/map">Map</a></li>
-            {% endif %}
+                    {% if page.url == '/' %}
+                        {% set additional_classes = ' nav-item-title icon-directions' %}
+                    {% endif %}
 
-            {# Blog #}
-            {% if '/blog' in current_page.url %}
-                <li class="nav-item nav-item-active"><a href="/blog">Blog</a></li>
-            {% else %}
-                <li class="nav-item"><a href="/blog">Blog</a></li>
-            {% endif %}
-
-            {# Home #}
-            <li class="nav-item nav-item-title icon-directions"><a href="{{ base_url }}">{{ site_title }}</a></li>
-
-            {# TODO: be smarter about this. use the following #}
-            {#{% for page in pages.children %}#}
-                {#{% if page.visible %}#}
-                    {#{% set current_page = (page.active or page.activeChild) ? 'active' : '' %}#}
-                    {#<li class="{{ current_page }}"><a href="{{ page.url }}">{{ page.menu }}</a></li>#}
-                {#{% endif %}#}
-            {#{% endfor %}#}
+                    <li class="nav-item{{ additional_classes }}"><a href="{{ page.url }}">{{ page.menu }}</a></li>
+                {% endif %}
+            {% endfor %}
         </ul>
     </nav>
 </header>
