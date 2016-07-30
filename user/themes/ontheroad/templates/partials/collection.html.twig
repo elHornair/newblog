@@ -1,0 +1,17 @@
+<ul class="overview">
+    {% for page in collection %}
+        {% if page.published != false %}
+            <li class="overview-item">
+                <div class="overview-part">
+                    <a href="{{ page.url }}"><img src="/user/pages/03.blog/{{ page.folder }}/pics/{{ page.header.picture }}"></a>
+                </div>
+                <div class="overview-part">
+                    <span class="overview-meta">{{ page.header.date }}</span>
+                    <h3 class="overview-title"><a href="{{ page.url }}">{{ page.title }}</a></h3>
+                    <p class="overview-content">{{ page.header.description }}</p>
+                    <a class="overview-link" href="{{ page.url }}">Lesen</a>
+                </div>
+            </li>
+        {% endif %}
+    {% endfor %}
+</ul>

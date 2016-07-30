@@ -1,0 +1,6 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+    {{ parent() }}
+    {% include 'partials/collection.html.twig' with {'collection': page.find('/blog').children.published().order('date', 'desc').slice(0, 3) } %}
+{% endblock %}
