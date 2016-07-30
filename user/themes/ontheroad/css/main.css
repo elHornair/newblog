@@ -103,6 +103,7 @@ img {
 }
 
 .social > li > .social-item {
+    font-family: sans-serif;
     font-size: 0.6em;
     padding-left: 38px;
     color: #FFFFFF;
@@ -159,6 +160,7 @@ img {
 }
 
 .nav > .nav-item.nav-item-title > a {
+    font-family: sans-serif;
     color: #222930;
 }
 
