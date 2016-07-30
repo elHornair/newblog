@@ -1,0 +1,17 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block head_scripts %}
+    {{ parent() }}
+    <link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css' rel='stylesheet' />
+{% endblock %}
+
+{% block content %}
+    {{ parent() }}
+    <div id="map"></div>
+{% endblock %}
+
+{% block bottom_scripts %}
+    {{ parent() }}
+    <script type="text/javascript" src='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.js'></script>
+    <script type="text/javascript" src="{{ theme_url }}/js/map.js?v=2.6"></script>
+{% endblock %}
