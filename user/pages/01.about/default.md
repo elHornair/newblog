@@ -1,10 +1,10 @@
 ---
-title: About
+title: Über mich
 description: Über mich
 ---
 
-Mein Name ist Alain und ich befinde mich momentan auf einem Reislein um die Welt. Hier versuche ich meine Erlebnisse
+Mein Name ist Alain und ich bin öfters mal auf Reisen. Hier versuche ich meine Erlebnisse
 ein bisschen zu dokumentieren.
 
-![Meine Wenigkeit](/content/pics/me.jpg)
+![Meine Wenigkeit](pics/me.jpg)
 <figcaption>Meine Wenigkeit</figcaption>
