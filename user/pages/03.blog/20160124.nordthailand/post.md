@@ -2,10 +2,10 @@
 title: Motorradtour durch Nordthailand
 description: Auf einer mehrtägigen Motorradtour erkunde ich die ländlichen Gegenden Nordthailands
 date: 2016/01/24
-picture: 20160124/chiang_dao_to_pai.jpg
+picture: chiang_dao_to_pai.jpg
 ---
 
-![Ban Rak Thai – Ein Hauch von China](/content/blog/pics/20160124/ban_rak_thai.jpg)
+![Ban Rak Thai – Ein Hauch von China](pics/ban_rak_thai.jpg)
 <figcaption>Ban Rak Thai – Ein Hauch von China</figcaption>
 
 An diesem kühlen Januarmorgen sitze ich an einem kleinen Tischchen am Seeufer von *Ban Rak Thai* und
@@ -18,7 +18,7 @@ Bürgerkrieg](https://de.wikipedia.org/wiki/Chinesischer_B%C3%BCrgerkrieg) unter
 politisch zu Thailand gehört, hat es dank den immernoch hauptsächlich aus Yunnan stammenden Bewohnern also
 einen starken chinesischen Touch.
 
-![Unterwegs nach Pai](/content/blog/pics/20160124/chiang_dao_to_pai.jpg)
+![Unterwegs nach Pai](pics/chiang_dao_to_pai.jpg)
 <figcaption>Unterwegs nach Pai</figcaption>
 
 Ich befinde mich momentan auf einer Motorradtour durch Nordthailand. Die vergangenen Tage habe ich deshalb
@@ -36,7 +36,7 @@ ein Wanderweg. Ziemlich lustig war auch die Kreuzung mit zwei identisch aussehen
 Wegweisern irgendwo im Nirgendwo (mangels Publikum und Telefonsignal habe ich mich für den „50-50-Joker“
 entschieden).
 
-![Sakura-Blüte](/content/blog/pics/20160124/sakura.jpg)
+![Sakura-Blüte](pics/sakura.jpg)
 <figcaption>Sakura-Blüte</figcaption>
 
 Ich trinke meinen Ginseng-Tee aus, ziehe alle meine mitgebrachten Kleider an (es ist nur ca. 10 Grad warm) und
@@ -44,7 +44,7 @@ setze mich auf's „Töffli“, wie ich das leichte Motorrad für mich nenne. W�
 [Sakura](https://de.wikipedia.org/wiki/Japanische_Kirschbl%C3%BCte)-Blüten langsam von der Wintersonne
 getrocknet wird, mache ich mich auf Richtung Süden.
 
-![Sutongpe-Brücke](/content/blog/pics/20160124/bridge_mae_hong_son.jpg)
+![Sutongpe-Brücke](pics/bridge_mae_hong_son.jpg)
 <figcaption>Sutongpe-Brücke</figcaption>
 
 Während ich versuche, immer schön auf der linken Strassenseite zu bleiben,
@@ -53,7 +53,7 @@ Schulkinder auf der Ladefläche. Ein ganz in orange gekleideter Mönch, der auf 
 mit einer vierköpfigen Familie drauf. Ein Transporter, der mit so viel Gemüse beladen ist, dass die Aufhängung
 völlig durchgedrückt ist. Hühner, die im letzten Moment vor dem herannahenden Motorrad flüchten.
 
-![Reisfelder in Mae Hong Son](/content/blog/pics/20160124/mae_hong_son_rice_fields.jpg)
+![Reisfelder in Mae Hong Son](pics/mae_hong_son_rice_fields.jpg)
 <figcaption>Reisfelder in Mae Hong Son</figcaption>
 
 Obwohl ich nur kurz für's Mittagessen ([Tom Yam Kung](https://de.wikipedia.org/wiki/Tom_Yam)) und für einen
@@ -68,17 +68,17 @@ gefährlichen Mix ab.
 
 Naja, klug war's nicht... Aber geil!
 
-![In den Bergen von Mae Chaem](/content/blog/pics/20160124/road_to_mae_chaem.jpg)
+![In den Bergen von Mae Chaem](pics/road_to_mae_chaem.jpg)
 <figcaption>In den Bergen von Mae Chaem</figcaption>
 
-![Brandrodung in der Region Mae Chaem](/content/blog/pics/20160124/slash_and_burn.jpg)
+![Brandrodung in der Region Mae Chaem](pics/slash_and_burn.jpg)
 <figcaption>Brandrodung in der Region Mae Chaem</figcaption>
 
-![Tropfsteinhöhle in Chiang Dao](/content/blog/pics/20160124/chiang_dao_cave.jpg)
+![Tropfsteinhöhle in Chiang Dao](pics/chiang_dao_cave.jpg)
 <figcaption>Tropfsteinhöhle in Chiang Dao</figcaption>
 
-![Grenzzaun zu Myanmar](/content/blog/pics/20160124/myanmar_border.jpg)
+![Grenzzaun zu Myanmar](pics/myanmar_border.jpg)
 <figcaption>Grenzzaun zu Myanmar</figcaption>
 
-![Sonnenuntergang in Ang Khang](/content/blog/pics/20160124/ang_khang_sunset.jpg)
+![Sonnenuntergang in Ang Khang](pics/ang_khang_sunset.jpg)
 <figcaption>Sonnenuntergang in Ang Khang</figcaption>
