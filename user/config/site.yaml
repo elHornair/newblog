@@ -5,3 +5,5 @@ author:
 metadata:
     description: 'My personal blog'
 
+redirects:
+    /blog/([0-9]*)_(.*): '/blog/$2'
