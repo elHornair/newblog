@@ -95,17 +95,21 @@ img {
     color: #4EB1BA;
     padding: 0;
 }
-
 .social > li {
     font-size: 1.6em;
     line-height: 1.2em;
     list-style: none;
 }
 
+.social > li:before {
+    bottom: -4px;
+    position: relative;
+}
+
 .social > li > .social-item {
     font-family: sans-serif;
     font-size: 0.6em;
-    padding-left: 38px;
+    padding-left: 20px;
     color: #FFFFFF;
 }
 
