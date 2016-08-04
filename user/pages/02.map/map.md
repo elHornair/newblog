@@ -1,5 +1,5 @@
 ---
-title: Map
+title: Karte
 description: Karte meiner Reiseziele
 ---
 
